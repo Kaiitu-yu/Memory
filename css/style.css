@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: #f2f2f2;
+}
+
+/*HEADER*/
+
+header{
+    background:white ;
+}
+header:after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+header .logo
+{
+    float: left;
+    color: black;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 15px;
+}
+
+header strong
+{
+    color: #787198; /*Couleur du texte en gras*/
+}
+
+/*SIDEBAR*/
+
+.show,.icon,input
+{
+    display: none;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #4b4276; /*Couleur de la sidebar*/
+  padding: 0px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+/*JEU*/
+
+section {
+	text-align: center;
+}
+
+section span {
+	color: red;
+}
+
+section div#alert {
+	background-color: #FF6B6B;
+	color: white;
+	width: auto;
+	max-width: 600px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+	font-size: 14pt;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#games {
+	background: transparent;
+	width: auto;
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+#games form {
+	font-weight: bold;
+}
+
+#games form input {
+	background-color: white;
+	border: 1px solid #EBEBEB;
+	padding: 5px;
+	width: 150px;
+	font-size: 16px;
+	color: #BABABA;
+}
+
+#games form input:focus {
+	outline: 0;
+}
+
+#games img {
+	background-size: cover;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	cursor: pointer;
+	transition: 300ms ease;
+}
+
+#games img:hover {
+	filter: hue-rotate(-50deg) saturate(200%);
+}
+
+#games .restart {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+#games .restart:hover {
+	background-color:#5cbf2a;
+}
+
+/*FOOTER*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #383259; /*Couleur du grand bandeau*/
+    height: auto;
+    width: 100vw;
+    font-family: "Poppins";
+    padding-top: 40px;
+    color: #fff; /*Couleur du texte du footer*/
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background: #26213B; /*Couleur du petit bandeau*/
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
